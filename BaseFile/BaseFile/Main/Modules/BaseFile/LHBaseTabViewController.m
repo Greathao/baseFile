@@ -24,6 +24,8 @@
     [self setTableViewFrame];
     [self regTableViewCell];
     [self hideMoreRefresh];
+    [self requsetData];
+    
 }
 
 #pragma mark - tableView 配置
@@ -82,6 +84,11 @@
     self.normalFooter = normalFooter;
 }
  
+-(void)requsetData;
+{
+    
+}
+
 #pragma mark - 子类方法调用
 
 /// 删除下拉刷新
@@ -151,6 +158,7 @@
 -(void)refresh;
 {
     self.pageNumber = 1;
+    [self requsetData];
     
 }
 
@@ -158,6 +166,7 @@
 -(void)loadMore;
 {
     self.pageNumber ++;
+    [self requsetData];
 }
 
 /// 配置 下拉刷新

@@ -31,12 +31,13 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _backgroundColor = [UIColor whiteColor];
-        _backgroundImageName = @"";
+        _backGroundColor = [UIColor whiteColor];
+        _backGroundImageName = @"";
         _isHideButtomLine = NO;
         _buttomLineColor = [UIColor colorWithRed:0.97f green:0.97f blue:0.97f alpha:1.00f];
         _titleName = @"";
         [self creatSubViews];
+        
     }
     return self;
 }
@@ -52,7 +53,7 @@
     self.backgroundImageView.hidden = YES;
     [self addSubview:self.backgroundImageView];
     
-    self.backgroundColor = _backgroundColor;
+    self.backgroundColor = _backGroundColor;
     
     self.leftArray = [NSMutableArray array];
     
@@ -97,9 +98,8 @@
     
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     CGFloat title_w = screenWidth -spac*2-button_w*i;
-    CGFloat title_x = spac+i*button_w;
-    //    self.titleView .frame = CGRectMake(title_x, status_h, title_w, subView_h);
-    //    self.titleLable.frame = self.titleView.bounds;
+    
+    
     //布局右
     int j = 0;
     //左侧按钮区域
@@ -113,29 +113,47 @@
         
     }
     
+ 
     //更新title布局
-    self.titleView .frame = CGRectMake(title_x, status_h, title_w-(i*button_w), subView_h);
+    
+    //防止因布局左右按钮导致titleView内容不居中
+    CGFloat n_ij = i;
+    //谁大 谁是大哥
+    
+    if (j>i) {
+        n_ij = j;
+    }
+    //titleView x 坐标
+    CGFloat title_x = spac+n_ij *button_w;
+    
+    //titleView 宽度（ 宽 - 两边间距 - 左右个数<那边多依着哪边>）
+    title_w = screenWidth -spac*2-button_w*n_ij*2;
+    
+    
+    self.titleView .frame = CGRectMake(title_x, status_h, title_w, subView_h);
+    
     self.titleLable.frame = self.titleView.bounds;
     //线的布局
     self.line.frame = CGRectMake(0, status_h+subView_h, screenWidth, 1);
     
 }
 
--(void)setBackgroundColor:(UIColor *)backgroundColor
+-(void)setBackGroundColor:(UIColor *)backGroundColor
 {
-    _backgroundColor = backgroundColor;
+    _backGroundColor = backGroundColor;
+    
     self.backgroundImageView.hidden  = YES;
-    self.backgroundColor = backgroundColor;
+    self.backgroundColor = backGroundColor;
 }
- 
- -(void)setBackgroundImageName:(NSString *)backgroundImageName
- {
-     [self.backgroundImageView setImage:[UIImage imageNamed:backgroundImageName]];
-     self.backgroundImageView.hidden  = NO;
-     _backgroundImageName = backgroundImageName;
- }
 
- -(void)setTitleName:(NSString *)titleName
+-(void)setBackGroundImageName:(NSString *)backGroundImageName
+{
+    [self.backgroundImageView setImage:[UIImage imageNamed:backGroundImageName]];
+    self.backgroundImageView.hidden  = NO;
+    _backGroundImageName = backGroundImageName;
+}
+
+-(void)setTitleName:(NSString *)titleName
 {
     _titleName = titleName;
     self.titleLable.text = titleName;

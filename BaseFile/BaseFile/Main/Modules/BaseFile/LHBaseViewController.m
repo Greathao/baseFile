@@ -32,9 +32,8 @@ static CGFloat const touch_Width = 44.0f;
     [super viewDidLoad];
     [self setPan];
     [self configNavgationBar];
-    [self addLeftItem];
-    [self addRightItem];
     
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 -(void)configNavgationBar
@@ -47,6 +46,13 @@ static CGFloat const touch_Width = 44.0f;
     [self.view addSubview:nav];
     //赋值给外步只读属性供子类修改
     [self setValue:nav forKey:NSStringFromSelector(@selector(lh_nav))];
+    [self addLeftItem];
+    [self addRightItem];
+    
+    if (self.navigationController.viewControllers.count>1) {
+        [self setNavLeftItemImage:@"cion_xinxi_fanhui" highImage:@"cion_geren_btn_back"];
+    }
+    
 }
 
 -(void)addLeftItem
@@ -135,6 +141,31 @@ static CGFloat const touch_Width = 44.0f;
 }
 
 
+
+/// 设置左边标题字体大小
+/// @param font 字体
+-(void)setNavLeftItemTitleFont:(UIFont*)font;{
+    if (!self.lh_nav.leftItems.count) {
+        return;
+    }
+    UIButton * btnItem =(UIButton*)self.lh_nav.leftItems[0];
+    btnItem.titleLabel.font = font;
+    
+}
+
+
+/// 设置右边标题字体大小
+/// @param font 字体
+-(void)setNavRightItemTitleFont:(UIFont*)font;{
+    if (!self.lh_nav.rightItems.count) {
+        return;
+    }
+    UIButton * btnItem =(UIButton*)self.lh_nav.rightItems[0];
+    btnItem.titleLabel.font = font;
+}
+
+
+
 /// 设置左按钮图片
 /// @param image normal图片
 /// @param highImage 高亮图片
@@ -191,11 +222,21 @@ static CGFloat const touch_Width = 44.0f;
 
 -(void)startLoading;
 {
-    if (_errorView) {
-        [_errorView removeFromSuperview];
-        _errorView = nil;
-    }
-    _startFullView = [[LHBlockAnimationView alloc]initWithFrame:self.view.bounds];
+    [self dismissErrorView];
+    [self stopLoading];
+    
+    
+    _startFullView = [[LHBlockAnimationView alloc]initWithFrame:CGRectMake(0, NAV_HEIGHT, kScreenWidth, kScreenHeight-NAV_HEIGHT)];
+ 
+    _startFullView.backgroundColor = [UIColor whiteColor];
+    _startFullView.aBlockWide = 20;
+    _startFullView.aBlockHight = 30;
+    _startFullView.animBlockNum =10;
+    _startFullView.animDuration = 0.3;
+    
+    
+    
+    
     [self.view addSubview:_startFullView];
     [_startFullView startAnimation];
 }
@@ -212,14 +253,19 @@ static CGFloat const touch_Width = 44.0f;
 -(void)showErrorViewRefreshCallbackBlock:(void (^)(void))callbackBlock;
 {
     
+    [self stopLoading];
     [self dismissErrorView];
-    
     _errorView = [LHNetWorkErrorView viewFromXib];
+    _errorView.frame =CGRectMake(0, NAV_HEIGHT, kScreenWidth, kScreenHeight-NAV_HEIGHT);
+    
+    
     [self.view addSubview:_errorView];
     
     WeakSelf
     _errorView.refreshBlock = ^{
         [weakSelf dismissErrorView];
+        callbackBlock();
+        
     };
 }
 

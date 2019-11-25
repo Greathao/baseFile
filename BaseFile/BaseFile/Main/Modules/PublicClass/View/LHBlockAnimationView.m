@@ -218,6 +218,23 @@ typedef NS_ENUM(NSInteger, ABlockDirection){
     [self layoutIfNeeded];;
  
 }
+-(void)setAnimBlockNum:(CGFloat)animBlockNum{
+    _animBlockNum = animBlockNum;
+   
+    [_animCenterBlocks enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj removeFromSuperview];
+        
+    }];
+      [_animCenterBlocks removeAllObjects];
+      [self.moveTempBlockVw removeFromSuperview];
+   
+      [self animaUI];
+}
+
+-(void)setAnimDuration:(CGFloat)animDuration{
+    _animDuration = animDuration;
+}
+
 
 
 @end

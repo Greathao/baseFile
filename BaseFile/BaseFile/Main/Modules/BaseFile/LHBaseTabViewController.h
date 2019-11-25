@@ -67,6 +67,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 配置 上啦加载
 /// @param mormalFooter MJRefreshBackNormalFooter
 -(void)configFooterRefreshStyleWith:(MJRefreshBackNormalFooter*)mormalFooter;
+ 
+/// 加载数据
+-(void)requsetData;
 
 @end
 

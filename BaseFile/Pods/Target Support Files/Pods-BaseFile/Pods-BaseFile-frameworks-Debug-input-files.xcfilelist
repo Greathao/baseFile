@@ -1,4 +1,4 @@
-${PODS_ROOT}/Target Support Files/Pods-LHGouShengQian/Pods-LHGouShengQian-frameworks.sh
+${PODS_ROOT}/Target Support Files/Pods-BaseFile/Pods-BaseFile-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework

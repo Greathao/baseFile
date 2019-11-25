@@ -53,6 +53,19 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param color 颜色
 -(void)setNavRightItemTitleColor:(UIColor*)color;
 
+
+/// 设置左边标题字体大小
+/// @param font 字体
+-(void)setNavLeftItemTitleFont:(UIFont*)font;
+
+
+/// 设置右边标题字体大小
+/// @param font 字体
+-(void)setNavRightItemTitleFont:(UIFont*)font;
+
+
+
+
 /// 设置左按钮图片
 /// @param image normal图片
 /// @param highImage 高亮图片

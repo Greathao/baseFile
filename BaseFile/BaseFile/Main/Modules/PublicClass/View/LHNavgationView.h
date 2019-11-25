@@ -15,9 +15,9 @@ typedef  void(^LHNavgationRightActionBlock)(UIView*view);
 @interface LHNavgationView : UIView
 
 ///设置背景图片
-@property (nonatomic,copy)   NSString * backgroundImageName;
+@property (nonatomic,copy)   NSString * backGroundImageName;
 ///设置背景颜色默认白色
-@property (nonatomic,strong) UIColor *backgroundColor;
+@property (nonatomic,strong) UIColor *backGroundColor;
 ///设置是否显示1像素的线
 @property (nonatomic,assign) BOOL isHideButtomLine;
 ///设置导航栏下面的线颜色
