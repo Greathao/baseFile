@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>className</key>
+		<string>sssssViewController</string>
+		<key>itemName</key>
+		<string>我的</string>
+		<key>itemImgNormal</key>
+		<string>toolbar_icon_wode_dis</string>
+		<key>itemImgSelect</key>
+		<string>toolbar_icon_wode_pre</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>LHCompassViewController</string>
+		<key>itemName</key>
+		<string>洗护</string>
+		<key>itemImgNormal</key>
+		<string>toolbar_icon_xihu-dis</string>
+		<key>itemImgSelect</key>
+		<string>toolbar_icon_xih_pre</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>LHTwoViewController</string>
+		<key>itemName</key>
+		<string>小管家</string>
+		<key>itemImgNormal</key>
+		<string>toolbar_icon_xiaoguanjia-_dis</string>
+		<key>itemImgSelect</key>
+		<string>toolbar_icon_xiaoguanjia-pre-</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>LHThreeViewController</string>
+		<key>itemName</key>
+		<string>Hi校园</string>
+		<key>itemImgNormal</key>
+		<string>toolbar_icon_HI-dis</string>
+		<key>itemImgSelect</key>
+		<string>toolbar_icon_HI_pre</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>LHFourViewController</string>
+		<key>itemName</key>
+		<string>我的</string>
+		<key>itemImgNormal</key>
+		<string>toolbar_icon_wode_dis</string>
+		<key>itemImgSelect</key>
+		<string>toolbar_icon_wode_pre</string>
+	</dict>
+</array>
+</plist>
