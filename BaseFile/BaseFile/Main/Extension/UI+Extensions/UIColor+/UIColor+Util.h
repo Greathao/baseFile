@@ -2,8 +2,8 @@
 //  UIColor+Util.h
 //  DriveGroup
 //
-//  Created by 海狸先生 on 16/3/4.
-//  Copyright © 2016年 海狸先生. All rights reserved.
+//  Created by liuhao on 16/3/4.
+//  Copyright © 2016年 liuhao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

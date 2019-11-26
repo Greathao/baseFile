@@ -2,7 +2,7 @@
 //  UIImageView+toBig.h
 //  ShareSpace
 //
-//  Created by 海狸先生 on 2017/11/7.
+//  Created by liuhao on 2017/11/7.
 //  Copyright © 2017年 SK. All rights reserved.
 //
 

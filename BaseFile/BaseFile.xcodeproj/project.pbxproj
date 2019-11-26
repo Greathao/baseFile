@@ -325,13 +325,13 @@
 		22240EE32385191D002E3F28 /* UI+Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				22240EF62385191D002E3F28 /* UIAlertView+Block.h */,
 				22240EE42385191D002E3F28 /* UIAlertView+Block.m */,
 				22240EE52385191D002E3F28 /* UIColor+ */,
 				22240EE82385191D002E3F28 /* UIButton+ */,
 				22240EEF2385191D002E3F28 /* UIDevice-Extensions.m */,
 				22240EF02385191D002E3F28 /* UIWindow+SIUtils.h */,
 				22240EF12385191D002E3F28 /* UIView+ */,
-				22240EF62385191D002E3F28 /* UIAlertView+Block.h */,
 				22240EF72385191D002E3F28 /* UILable+ */,
 				22240EFC2385191D002E3F28 /* UIDevice-Extensions.h */,
 				22240EFD2385191D002E3F28 /* UIImage+ */,
@@ -366,9 +366,9 @@
 			isa = PBXGroup;
 			children = (
 				22240EF22385191D002E3F28 /* UIView+RectCorner.h */,
-				22240EF32385191D002E3F28 /* UIView+Extensions.m */,
 				22240EF42385191D002E3F28 /* UIView+RectCorner.m */,
 				22240EF52385191D002E3F28 /* UIView+Extensions.h */,
+				22240EF32385191D002E3F28 /* UIView+Extensions.m */,
 			);
 			path = "UIView+";
 			sourceTree = "<group>";
@@ -376,10 +376,10 @@
 		22240EF72385191D002E3F28 /* UILable+ */ = {
 			isa = PBXGroup;
 			children = (
-				22240EF82385191D002E3F28 /* UILabel+Extension.m */,
+				22240EFB2385191D002E3F28 /* UILabel+AutoHeight.h */,
 				22240EF92385191D002E3F28 /* UILabel+AutoHeight.m */,
 				22240EFA2385191D002E3F28 /* UILabel+Extension.h */,
-				22240EFB2385191D002E3F28 /* UILabel+AutoHeight.h */,
+				22240EF82385191D002E3F28 /* UILabel+Extension.m */,
 			);
 			path = "UILable+";
 			sourceTree = "<group>";
@@ -387,9 +387,9 @@
 		22240EFD2385191D002E3F28 /* UIImage+ */ = {
 			isa = PBXGroup;
 			children = (
-				22240EFE2385191D002E3F28 /* UIImage+Extensions.h */,
 				22240EFF2385191D002E3F28 /* UIImageView+toBig.h */,
 				22240F002385191D002E3F28 /* UIImageView+toBig.m */,
+				22240EFE2385191D002E3F28 /* UIImage+Extensions.h */,
 				22240F012385191D002E3F28 /* UIImage+Extensions.m */,
 			);
 			path = "UIImage+";
@@ -400,9 +400,9 @@
 			children = (
 				22240F042385191D002E3F28 /* NSDictionary+Extension.h */,
 				22240F052385191D002E3F28 /* NSDate+Extension.h */,
-				22240F062385191D002E3F28 /* NSDate+Chinese.h */,
 				22240F072385191D002E3F28 /* NSString+Extensions.h */,
 				22240F082385191D002E3F28 /* NSDictionary+Extension.m */,
+				22240F062385191D002E3F28 /* NSDate+Chinese.h */,
 				22240F092385191D002E3F28 /* NSDate+Chinese.m */,
 				22240F0A2385191D002E3F28 /* NSDate+Extension.m */,
 				22240F0B2385191D002E3F28 /* NSString+Extensions.m */,

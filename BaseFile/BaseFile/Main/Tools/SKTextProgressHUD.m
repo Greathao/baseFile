@@ -2,7 +2,7 @@
 //  SKTextProgressHUD.m
 //  ShareSpace
 //
-//  Created by 海狸先生 on 2018/3/20.
+//  Created by liuhao on 2018/3/20.
 //  Copyright © 2018年 SK. All rights reserved.
 //
 

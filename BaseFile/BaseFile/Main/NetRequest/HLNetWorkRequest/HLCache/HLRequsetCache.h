@@ -3,7 +3,7 @@
 //  WashCallManger
 //
 //  Created by liuhao on 2018/4/19.
-//  Copyright © 2018年 北京海狸先生网络科技有限公司. All rights reserved.
+//  Copyright © 2018年 北京liuhao网络科技有限公司. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

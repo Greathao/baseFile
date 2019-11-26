@@ -2,7 +2,7 @@
 //  NSDate+Chinese.h
 //  ShareSpace
 //
-//  Created by 海狸先生 on 2017/10/11.
+//  Created by liuhao on 2017/10/11.
 //  Copyright © 2017年 SK. All rights reserved.
 //
 

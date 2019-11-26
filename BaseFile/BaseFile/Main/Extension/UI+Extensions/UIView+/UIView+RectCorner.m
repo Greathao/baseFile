@@ -2,7 +2,7 @@
 //  UIView+RectCorner.m
 //  AttorneyOL
 //
-//  Created by 海狸先生 on 2017/9/4.
+//  Created by SK on 2017/9/4.
 //  Copyright © 2017年 SK. All rights reserved.
 //
 

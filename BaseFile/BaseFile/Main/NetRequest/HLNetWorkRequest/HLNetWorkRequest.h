@@ -3,7 +3,7 @@
 //  NetWork封装
 //
 //  Created by liuhao on 2018/5/2.
-//  Copyright © 2018年 Beijing Mr Hi Network Technology Company Limited. All rights reserved.
+//  Copyright © 2018年 liuhao All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

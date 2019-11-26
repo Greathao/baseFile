@@ -16,7 +16,7 @@
 #import <CommonCrypto/CommonCryptor.h>
 #import<CommonCrypto/CommonDigest.h>
 
-static const NSString * KEY = @"hlF#*(x)";
+static const NSString * KEY = @"";
 
 @implementation DesFunc
 
@@ -167,7 +167,7 @@ static const NSString * KEY = @"hlF#*(x)";
     }];
     // 拼接
     NSString * str = [[ary componentsJoinedByString:@"&"]uppercaseString];
-    return [DesFunc md5:[NSString stringWithFormat:@"SING=HLGJSGK&%@",str]];
+    return [DesFunc md5:[NSString stringWithFormat:@"SING=  &%@",str]];
     
 }
 
